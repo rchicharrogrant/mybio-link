@@ -1,0 +1,112 @@
+body {
+  background-color: lightgrey;
+  margin-top: 90px;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Dosis", sans-serif;
+}
+
+.container {
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  margin: 0 auto;
+  background-image: url("/images/bg2.png");
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.round img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  border: 7px solid rgb(0, 164, 180);
+  box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.18);
+  object-fit: cover;
+}
+
+.wrap-header {
+  background-color: rgb(255, 255, 255, 0.8);
+  border: 5px solid rgb(0, 164, 180);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 20px 0px;
+}
+
+.container h1 {
+  color: rgb(0, 164, 180);
+  font-weight: 600;
+  font-size: 22px;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+i {
+  color: rgb(0, 164, 180);
+}
+
+.wrap {
+  border-radius: 10px;
+  background-color: rgb(0, 164, 180);
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 20px 0;
+  width: 100%;
+  display: block;
+  clear: both;
+  overflow: auto;
+  margin: 10px 0;
+}
+
+.wrap:hover {
+  background-color: #ffcf47;
+  color: #333333;
+  animation: shake 3s ease 0s 1 normal forwards;
+}
+
+.wrap-image {
+  width: 50%;
+  float: left;
+  text-align: right;
+}
+
+.wrap-image img {
+  margin-right: 10px;
+}
+
+.wrap p {
+  width: 50%;
+  float: left;
+  text-align: left;
+  margin: 10px 0 0;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: translateX(-8px);
+  }
+  20%,
+  40%,
+  60% {
+    transform: translateX(8px);
+  }
+  80% {
+    transform: translateX(5px);
+  }
+  90% {
+    transform: translateX(-5px);
+  }
+}
